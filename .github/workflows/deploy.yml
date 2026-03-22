@@ -19,12 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: narrador/package-lock.json
       - name: Install dependencies
-        run: cd narrador && npm install
+        run: |
+          cd narrador
+          npm install
       - name: Build
-        run: cd narrador && npm run build
+        run: |
+          cd narrador
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
