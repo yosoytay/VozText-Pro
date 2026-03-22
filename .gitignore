@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+dist/
+AppNarrador/
+narrador/dist/
+narrador/node_modules/
+NarradorBack/node_modules/
+NarradorBack/uploads/
+NarradorBack/audio/
+*.log
+*.zip
+.env
+result.json
+test_pdf*.js
+test_pdf_out.txt
