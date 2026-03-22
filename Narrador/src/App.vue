@@ -55,7 +55,7 @@
       </main>
 
       <footer class="text-center text-sm text-gray-400 pb-10">
-        Diseñado usando la API gTTS (Node.js) con Vue 3 + Tailwind CSS.
+        Versión Serverless: Ejecutando 100% en tu navegador (PDF.js + Web Speech API).
       </footer>
     </div>
   </div>
