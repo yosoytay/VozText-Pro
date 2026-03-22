@@ -29,8 +29,9 @@ import { ref } from 'vue';
 import { UploadCloud, Loader2 } from 'lucide-vue-next';
 import * as pdfjsLib from 'pdfjs-dist';
 
-// Configuración del worker de PDF.js para entorno Vite
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+// Configuración del worker de PDF.js importado directamente para que Vite lo procese
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.mjs?url';
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 const emit = defineEmits(['textExtracted', 'error']);
 
