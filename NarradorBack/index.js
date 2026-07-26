@@ -102,6 +102,6 @@ app.listen(PORT, () => {
 });
 
 // Ruta catch-all para Vue Router o acceso directo
-app.get('*', (req, res) => {
+app.use((req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
