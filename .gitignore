@@ -1,15 +1,30 @@
+```
+# Dependencies
 node_modules/
-.DS_Store
-dist/
-AppNarrador/
-narrador/dist/
-narrador/node_modules/
-NarradorBack/node_modules/
-NarradorBack/uploads/
-NarradorBack/audio/
-*.log
-*.zip
+package-lock.json
+
+# Environment
 .env
-result.json
-test_pdf*.js
-test_pdf_out.txt
+.env.local
+*.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+.env
+.env.*
+```
